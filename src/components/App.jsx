@@ -6,6 +6,7 @@ import RegisterPage from '../pages/registerPage';
 import ContactsPage from '../pages/contactsPage';
 import ProtectedRoute from '../PrivateRoute/PrivateRoute'
 
+
 const App = () => {
   return (
     <Router>
