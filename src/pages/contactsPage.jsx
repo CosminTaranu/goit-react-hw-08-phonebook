@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { getContacts } from '../components/contactService/contactService';  
+import { Button } from '@mui/material';
 
 const ContactsPage = () => {
   const [contacts, setContacts] = useState([]);
@@ -39,6 +40,15 @@ const ContactsPage = () => {
   return (
     <div style={styles.container}>
       <h1 style={styles.header}>Your Contacts</h1>
+      
+      <Button
+          variant="contained"
+          color="primary"
+          onClick={() => navigate('/')}
+          sx={{ marginRight: 2 }}
+        >
+          Back Home
+        </Button>
       <button onClick={handleLogout} style={styles.logoutButton}>Logout</button>
       
       <ul style={styles.contactList}>

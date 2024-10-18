@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const CONTACTS_API_URL = 'https://connections-api.goit.global/contacts';
+const CONTACTS_API_URL = 'https://67068b05a0e04071d22751a8.mockapi.io/contacts';
 export const getContacts = async () => {
   try {
     const token = localStorage.getItem('token');

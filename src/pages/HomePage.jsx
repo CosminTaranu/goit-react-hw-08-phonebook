@@ -29,8 +29,17 @@ const HomePage = () => {
           variant="contained"
           color="secondary"
           onClick={() => navigate('/login')}
+          sx={{ marginRight: 2 }}
         >
           Login
+        </Button>
+
+        <Button
+          variant="contained"
+          color="third"
+          onClick={() => navigate('/login')}
+        >
+          Contacts
         </Button>
       </Box>
     </Box>
