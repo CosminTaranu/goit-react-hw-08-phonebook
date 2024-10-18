@@ -7,9 +7,9 @@ import ContactsPage from '../pages/contactsPage';
 import ProtectedRoute from '../PrivateRoute/PrivateRoute'
 
 
-const App = () => {
+function App () {
   return (
-    <Router>
+    <Router basename="/goit-react-hw-08-phonebook">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<LoginPage />} />
